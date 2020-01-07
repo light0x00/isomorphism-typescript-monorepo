@@ -1,5 +1,5 @@
 {
-	"extends": "../../tsconfig.cjs.json",
+	"extends": "../../tsconfig.esm.json",
 	"compilerOptions": {
 		"lib": ["DOM"],
 		/* 生成d.ts map文件 用于调试 */

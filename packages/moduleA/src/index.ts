@@ -1,5 +1,6 @@
-export async function hello2() : Promise<string>{
-	return new Promise((rs,rj)=>{
-		rs("hello!!!")
+import { add } from "lodash";
+export async function hello2(): Promise<string> {
+	return new Promise((rs, rj) => {
+		rs("hello!!!" + add(1, 2))
 	});
 }

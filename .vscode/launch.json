@@ -14,8 +14,18 @@
 			"console": "integratedTerminal",
 			"protocol": "inspector",
 			"sourceMaps": true,
-			// "outFiles": ["${workspaceFolder}/packages/*/lib/cjs/*.js"]
 			"outFiles": ["${workspaceFolder}/packages/*/lib/cjs/*.js"]
+		},
+		{
+			"type": "node",
+			"request": "launch",
+			"name": "DEBUG-NODE2",
+			"program": "${file}",
+			"args": [
+			],
+			"console": "integratedTerminal",
+			"sourceMaps": false,
+			"protocol": "inspector",
 		},
 	],
 }

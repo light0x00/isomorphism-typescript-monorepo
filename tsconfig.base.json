@@ -8,7 +8,10 @@
 		"strictNullChecks": true, 
 		"strictPropertyInitialization": true, 
 		"moduleResolution": "Node",
-		
+		/* __esModule */
+		"esModuleInterop":true,
+		/* 将commonjs 的 exports挂到default上 */
+		"allowSyntheticDefaultImports": true,
 		"composite": true
 	},
 	"include": []
