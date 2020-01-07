@@ -1,0 +1,18 @@
+/* 此配置用于构建cjs、esm */
+{
+	"extends": "./tsconfig.base.json",
+	"references": [
+		{
+			"path": "./packages/moduleA/tsconfig.json"
+		},
+		{
+			"path": "./packages/moduleB/tsconfig.json"
+		},
+		{
+			"path": "./packages/moduleA/tsconfig.esm.json"
+		},
+		{
+			"path": "./packages/moduleB/tsconfig.esm.json"
+		},
+	]
+}

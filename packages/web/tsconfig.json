@@ -1,0 +1,17 @@
+{
+	"extends": "../../tsconfig.cjs.json",
+	"compilerOptions": {
+		"lib": ["DOM"],
+		/* 生成d.ts map文件 用于调试 */
+		"rootDir": "src",
+		"outDir": "dist/types",
+	},
+	"references": [
+		{
+			"path": "../moduleA"
+		}
+	],
+	"include": [
+		"src"	
+	]
+}

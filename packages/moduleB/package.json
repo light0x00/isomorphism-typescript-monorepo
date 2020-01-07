@@ -1,0 +1,16 @@
+{
+	"name": "@light0x00/moduleB",
+	"version": "1.0.0",
+	"main": "lib/cjs/index.js",
+	"module": "lib/esm/index.js",
+	"scripts": {
+		"prebuild":"rimraf lib/",
+		"build": "yarn build:esm && yarn build:cjs",
+		"build:esm": "tsc -p tsconfig.esm.json",
+		"build:cjs": "tsc -p tsconfig.json"
+	},
+	"license": "MIT",
+	"dependencies": {
+		"@light0x00/moduleA": "1.0.0"
+	}
+}
