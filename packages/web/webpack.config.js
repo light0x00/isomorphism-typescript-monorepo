@@ -1,10 +1,17 @@
 const { resolve } = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const {BundleAnalyzerPlugin} = require("webpack-bundle-analyzer");
-const LodashWebpackPlugin = require("lodash-webpack-plugin");
+
 module.exports = {
 	mode: "production",
-	devtool: "inline-source-map",
+	/* 可见代码行、列、源码,单独文件 */
+	devtool: "eval-source-map",
+	/* 可见代码行、列、源码,内联在bundle里 */
+	// devtool: "inline-source-map",
+	/* 可见行,无源码 */
+	// devtool: "nosources-source-map",
+	/* 可见代码行、列、源码,,单独文件 */
+	// devtool: "source-map",
 	entry: resolve(__dirname, "src/index.ts"),
 	output: {
 		path: resolve(__dirname, "dist"),
@@ -34,8 +41,6 @@ module.exports = {
 			analyzerMode: "static",
 			reportFilename: "analyzer-report.html",
 			openAnalyzer: false,
-		}),
-		/* 实测比 import 'lodash/xx' 的方式要小一半 */
-		// new LodashWebpackPlugin({})
+		})
 	]
 };

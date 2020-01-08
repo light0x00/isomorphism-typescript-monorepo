@@ -3,6 +3,8 @@
 	"version": "1.0.0",
 	"main": "lib/cjs/index.js",
 	"module": "lib/esm/index.js",
+	"types": "lib/types/index.d.ts",
+	"files": ["lib","src"],
 	"license": "MIT",
 	"scripts": {
 		"prebuild": "rimraf lib/",

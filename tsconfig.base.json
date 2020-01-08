@@ -1,17 +1,20 @@
 {
 	"compilerOptions": {
+		/* 环境 */
 		"lib": [
 			"ESNext"
 		],
+		/* 静态分析 */
 		"strict": true,
-		"noImplicitAny": true, 
-		"strictNullChecks": true, 
-		"strictPropertyInitialization": true, 
+		/* 兼容 */
 		"moduleResolution": "Node",
-		/* __esModule */
-		"esModuleInterop":true,
-		/* 将commonjs 的 exports挂到default上 */
-		"allowSyntheticDefaultImports": true,
+		"esModuleInterop": true,/* __esModule */
+		"allowSyntheticDefaultImports": true,/* 将commonjs 的 exports挂到default上 */
+		/* 输出 */
+		"declaration": true,
+		"declarationMap": true,
+		"sourceMap": true,
+		/* 子模块使用references */
 		"composite": true
 	},
 	"include": []

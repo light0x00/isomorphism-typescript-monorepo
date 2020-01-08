@@ -1,15 +1,10 @@
 {
 	"extends": "./tsconfig.base.json",
 	"compilerOptions": {
-		/* 模块化标准 */
 		"module": "ESNext",
-		/* 适配js版本 */
-		"target": "ES6",
-		/* 声明文件与 在 cjs中处理 */
-		"declaration": true,
-		"declarationMap": true,
-		/* sourceMap  */
-		"sourceMap": true
+		"composite": false,
+		"declaration": false,
+		"declarationMap": false
 	},
 	"include": []
 }
