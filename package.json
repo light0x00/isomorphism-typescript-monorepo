@@ -5,7 +5,8 @@
 	"license": "MIT",
 	"private": true,
 	"scripts": {
-		"build":"tsc -b"
+		"build":"tsc -b",
+		"deploy:pages":""
 	},
 	"workspaces": [
 		"packages/*"

@@ -2,3 +2,4 @@ node_modules
 lib
 dist
 pages.sh
+_site
