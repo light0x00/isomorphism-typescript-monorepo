@@ -7,13 +7,14 @@
 		{
 			"type": "node",
 			"request": "launch",
-			"name": "DEBUG-NODE",
+			"name": "RUN-TS",
 			"program": "${file}",
 			"args": [
 			],
 			"console": "integratedTerminal",
 			"protocol": "inspector",
 			"sourceMaps": true,
+			//告知 vscode ts源码编译后的js文件的位置
 			"outFiles": ["${workspaceFolder}/packages/*/lib/cjs/*.js"]
 		},
 		{

@@ -1,8 +1,11 @@
 {
 	"extends":"../../tsconfig.cjs.json",
 	"compilerOptions": {
+		//源码根目录
 		"rootDir": "src",
+		//js 文件(cjs)输出目录
 		"outDir": "lib/cjs",
+		//类型声明文件的输出目录
 		"declarationDir": "lib/types"
 	},
 	"references": [

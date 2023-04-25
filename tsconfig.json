@@ -1,4 +1,4 @@
-/* 此配置用于构建cjs、esm */
+/* 此配置用于编译cjs、esm , 对于本地开发而言编译两种输出没有必要, 所以可以将这个文件拆分 */
 {
 	"extends": "./tsconfig.base.json",
 	"references": [

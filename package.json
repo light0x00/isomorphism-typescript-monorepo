@@ -5,8 +5,8 @@
 	"license": "MIT",
 	"private": true,
 	"scripts": {
-		"build":"tsc -b",
-		"deploy:pages":""
+		"build": "tsc -b",
+		"release:pages": "npm run build --workspace packages/web && gp -a packages/web/dist -m 'release: auto deploy'"
 	},
 	"workspaces": [
 		"packages/*"
@@ -14,7 +14,8 @@
 	"devDependencies": {
 		"@types/node": "^13.1.4",
 		"esm": "^3.2.25",
+		"github-pages-publisher": "^0.0.4",
 		"rimraf": "^3.0.0",
-		"typescript": "^3.7.4"
+		"typescript": "^5.0.4"
 	}
 }
